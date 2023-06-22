@@ -101,3 +101,29 @@ Tą strone robiła <a href="https://witchdaggah.github.io/">ta pani</a>.
 </div>
 
 </body>
+
+
+<script> 
+var konamicode = [38,38,40,40,37,39,37,39,66,65]; 
+var kc=0; 
+     
+    function checker(){ 
+    if (kc==10){ 
+    kc=0; 
+    location.href = 'https://www.youtube.com/watch?v=BoAHUfmNkZY';; 
+    } 
+} 
+function keyUp(e) { 
+    var keynum; 
+    if (window.event){keynum = event.keyCode;} 
+    else if (e.which){keynum = e.which;} 
+        for (i=0;i<222;i++){ 
+        var kx=konamicode[kc]; 
+        if (keynum==i){ 
+        if (i!=kx){kc=0;} else {kc++;} 
+        } 
+    } 
+    checker(); 
+} 
+document.onkeyup = keyUp;  
+</script><style type="text/css" id="operaUserStyle"></style> 
